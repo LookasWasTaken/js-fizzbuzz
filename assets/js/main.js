@@ -24,7 +24,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda 
 // for loop
 // switch.case
 // Modular Operator %x
-// Equality Operator ==
+// Equality Operator == / === Equality Strict
 
 const ulElement = document.querySelector("#list");
 
@@ -36,21 +36,21 @@ for (let i = 1; i <= 300; i++) {
   switch (true) {
     // console.log di tutti i numeri divisibili per 3 && 5
 
-    case i % 3 == 0 && i % 5 === 0:
+    case i % 3 === 0 && i % 5 === 0:
       console.log(i, "FizzBuzz");
       ulElement.innerHTML += `<li class="fizzbuzz">FizzBuzz</li>`;
       break;
 
     // console.log di tutti i numeri divisibili per 3
 
-    case i % 3 == 0:
+    case i % 3 === 0:
       console.log(i, "Fizz");
       ulElement.innerHTML += `<li class="fizz">Fizz</li>`;
       break;
 
     // console.log di tutti i numeri divisibili per 5
 
-    case i % 5 == 0:
+    case i % 5 === 0:
       console.log(i, "Buzz");
       ulElement.innerHTML += `<li class="buzz">Buzz</li>`;
       break;
