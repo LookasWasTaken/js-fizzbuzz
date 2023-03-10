@@ -4,8 +4,81 @@ body{
 
 h1{
     font-size: 4rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover{
+    letter-spacing: 2rem;
+    filter: drop-shadow(0 0 1rem hsl(164deg 89% 44%));
 }
 
 li{
+    color: black;
+    width: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(195deg 81% 39%);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+    box-shadow: 0 0 7px 0 black;
+}
+
+li:hover{
+    border-radius: 50px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.fizz{
+    background-color: hsl(164deg 89% 44%);
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: all 0.2s;
+}
+
+.buzz{
+    background-color: hsl(42deg 100% 70%);
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: all 0.2s;
+}
+
+.fizzbuzz{
+    background-color: hsl(346deg 85% 61%);
+    border-radius: 25px;
+    transition: all 0.2s;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 6rem;
+    align-items: center;
+    justify-content: start;
+}
+
+.fizz:hover, .buzz:hover, .fizzbuzz:hover{
+    animation: spin 2s linear infinite;
+    cursor: grab;
     color: white;
+    scale: 1.5;
+}
+
+.fizzbuzz:hover{
+    scale: 2;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
 }

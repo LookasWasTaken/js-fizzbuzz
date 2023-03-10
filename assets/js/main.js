@@ -30,7 +30,7 @@ const ulElement = document.querySelector("#list");
 
 // loop for per la console.log dei numeri
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 300; i++) {
   // switch.case per calcolare quando un numero è divisibile per un altro
 
   switch (true) {
@@ -38,21 +38,21 @@ for (let i = 1; i <= 100; i++) {
 
     case i % 3 == 0 && i % 5 === 0:
       console.log(i, "FizzBuzz");
-      ulElement.innerHTML += `<li>FizzBuzz</li>`;
+      ulElement.innerHTML += `<li class="fizzbuzz">FizzBuzz</li>`;
       break;
 
     // console.log di tutti i numeri divisibili per 3
 
     case i % 3 == 0:
       console.log(i, "Fizz");
-      ulElement.innerHTML += `<li>Fizz</li>`;
+      ulElement.innerHTML += `<li class="fizz">Fizz</li>`;
       break;
 
     // console.log di tutti i numeri divisibili per 5
 
     case i % 5 == 0:
       console.log(i, "Buzz");
-      ulElement.innerHTML += `<li>Buzz</li>`;
+      ulElement.innerHTML += `<li class="buzz">Buzz</li>`;
       break;
 
     // console.log di tutti i numeri da 1 a 100
