@@ -10,13 +10,7 @@ Consigli del giorno:
 1. Scriviamo sempre prima dei commenti in italiano o inglese per capire cosa vogliamo fare
 2. Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 3. Facciamo attenzione all'ordine delle condizioni che usiamo
-BONUS 1:
-Crea un container nel DOM , aggiungendo un elemento html con il numero o la stringa corretta da mostrare.
-Potete usare vari strumenti per farlo:
-`append()` oppure
-`.innerHTML`
-`.insertAdjacentHTML()`
-A voi la scelta
+
 BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. */
 
@@ -56,3 +50,16 @@ for (let i = 1; i <= 100; i++) {
       break;
   }
 }
+
+
+/* BONUS 1:
+Crea un container nel DOM , aggiungendo un elemento html con il numero o la stringa corretta da mostrare.
+Potete usare vari strumenti per farlo:
+`append()` oppure
+`.innerHTML`
+`.insertAdjacentHTML()` */
+
+const ulElement = document.querySelector("#list")
+const liElement = document.createElement("li")
+liElement.innerText = "List try"
+ulElement.append(liElement)
