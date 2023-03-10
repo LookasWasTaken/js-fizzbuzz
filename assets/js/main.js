@@ -11,6 +11,13 @@ Consigli del giorno:
 2. Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 3. Facciamo attenzione all'ordine delle condizioni che usiamo
 
+BONUS 1:
+Crea un container nel DOM , aggiungendo un elemento html con il numero o la stringa corretta da mostrare.
+Potete usare vari strumenti per farlo:
+`append()` oppure
+`.innerHTML`
+`.insertAdjacentHTML()`
+
 BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. */
 
@@ -18,6 +25,8 @@ Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda 
 // switch.case
 // Modular Operator %x
 // Equality Operator ==
+
+const ulElement = document.querySelector("#list");
 
 // loop for per la console.log dei numeri
 
@@ -29,37 +38,28 @@ for (let i = 1; i <= 100; i++) {
 
     case i % 3 == 0 && i % 5 === 0:
       console.log(i, "FizzBuzz");
+      ulElement.innerHTML += `<li>FizzBuzz</li>`;
       break;
 
     // console.log di tutti i numeri divisibili per 3
 
     case i % 3 == 0:
       console.log(i, "Fizz");
+      ulElement.innerHTML += `<li>Fizz</li>`;
       break;
 
     // console.log di tutti i numeri divisibili per 5
 
     case i % 5 == 0:
       console.log(i, "Buzz");
+      ulElement.innerHTML += `<li>Buzz</li>`;
       break;
 
     // console.log di tutti i numeri da 1 a 100
 
     default:
       console.log("Default", i);
+      ulElement.innerHTML += `<li>${i}</li>`;
       break;
   }
 }
-
-
-/* BONUS 1:
-Crea un container nel DOM , aggiungendo un elemento html con il numero o la stringa corretta da mostrare.
-Potete usare vari strumenti per farlo:
-`append()` oppure
-`.innerHTML`
-`.insertAdjacentHTML()` */
-
-const ulElement = document.querySelector("#list")
-const liElement = document.createElement("li")
-liElement.innerText = "List try"
-ulElement.append(liElement)
