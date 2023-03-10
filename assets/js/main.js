@@ -19,3 +19,40 @@ Potete usare vari strumenti per farlo:
 A voi la scelta
 BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. */
+
+// for loop
+// switch.case
+// Modular Operator %x
+// Equality Operator ==
+
+// loop for per la console.log dei numeri
+
+for (let i = 1; i <= 100; i++) {
+  // switch.case per calcolare quando un numero è divisibile per un altro
+
+  switch (true) {
+    // console.log di tutti i numeri divisibili per 3 && 5
+
+    case i % 3 == 0 && i % 5 === 0:
+      console.log(i, "FizzBuzz");
+      break;
+
+    // console.log di tutti i numeri divisibili per 3
+
+    case i % 3 == 0:
+      console.log(i, "Fizz");
+      break;
+
+    // console.log di tutti i numeri divisibili per 5
+
+    case i % 5 == 0:
+      console.log(i, "Buzz");
+      break;
+
+    // console.log di tutti i numeri da 1 a 100
+
+    default:
+      console.log("Default", i);
+      break;
+  }
+}
