@@ -74,6 +74,10 @@ ul{
     scale: 2;
 }
 
+.fizz:active, .buzz:active, .fizzbuzz:active{
+    scale: 0.8;
+}
+
 @keyframes spin {
     from{
         transform: rotate(0deg);
