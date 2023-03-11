@@ -26,6 +26,9 @@ li{
     text-transform: uppercase;
     transition: 0.2s;
     box-shadow: 0 0 7px 0 black;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 li:hover{
